@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="car1" class="com.mahesh.model.Car">
+		<property name="carName" value="Maruti Suzuki Wagnor LXi">
+		</property>
+	</bean>
+
+	<bean id="car2" class="com.mahesh.model.Car">
+		<property name="carName" value="Limoziane">
+		</property>
+	</bean>
+
+	<bean id="car3" class="com.mahesh.model.Car">
+		<property name="carName" value="Renault Duster">
+		</property>
+	</bean>
+
+	<bean id="car4" class="com.mahesh.model.Car">
+		<property name="carName" value="Tata Nano and Ford">
+		</property>
+	</bean>
+
+	<bean id="car5" class="com.mahesh.model.Car">
+		<property name="carName" value="WolksWagan">
+		</property>
+	</bean>
+
+	<bean id="p1" class="com.mahesh.model.Person">
+		<property name="name" value="Mahesh Dilip Potdar" />
+		<property name="address" value="Pune,India" />
+
+		<property name="cars">
+			<list>
+				<ref bean="car1" />
+				<ref bean="car2" />
+				<ref bean="car3" />
+				<ref bean="car4" />
+				<ref bean="car5" />
+			</list>
+		</property>
+	</bean>
+
+</beans>			
